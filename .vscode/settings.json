@@ -1,10 +1,10 @@
 {
 	"c_project": {
 		// Directory στο οποίο βρίσκεται το πρόγραμμα
-		"dir": "programs/list_example",
+		"dir": "programs/pqueue_set_example",
 
 		// Όνομα του εκτελέσιμου προγράμματος
-		"program": "list_example",
+		"program": "pqueue_set_example",
 
 		// Ορίσματα του προγράμματος.
 		// - Για ανακατεύθυνση εισόδου βάζουμε ορίσματα: "<", "input-file"
@@ -19,5 +19,9 @@
 		"arg4": "",
 		"arg5": "",
 		"arg6": "",
+	},
+	"files.associations": {
+		"adtpriorityqueue.h": "c",
+		"adtset.h": "c"
 	},
 }
