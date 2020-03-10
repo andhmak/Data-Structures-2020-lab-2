@@ -10,7 +10,7 @@ CFLAGS = -Werror -Wall -g -I$(INCLUDE)
 LDFLAGS = -lm
 
 # Αρχεία .o
-OBJS = pair_sum_test.o pair_sum.o $(LIB)/k08.a
+OBJS = pair_sum_test.o pair_sum_using_map.o $(LIB)/k08.a
 
 # Το εκτελέσιμο πρόγραμμα
 EXEC = pair_sum_test

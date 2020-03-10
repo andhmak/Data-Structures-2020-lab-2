@@ -15,7 +15,7 @@ int* create_int(int value) {
 }
 
 void test_pair_sum() {
-	int N = 100;
+	int N = 1000000;
 
 	Vector numbers = vector_create(0, free);
 	for (int i = 0; i < N; i++)

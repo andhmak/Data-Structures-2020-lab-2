@@ -22,6 +22,7 @@
 	},
 	"files.associations": {
 		"adtpriorityqueue.h": "c",
-		"adtset.h": "c"
+		"adtset.h": "c",
+		"adtmap.h": "c"
 	},
 }
