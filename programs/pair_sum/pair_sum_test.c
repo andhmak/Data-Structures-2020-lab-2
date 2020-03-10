@@ -26,8 +26,7 @@ void test_pair_sum() {
 	TEST_ASSERT(pair != NULL);
 	TEST_ASSERT(pair->first + pair->second == N);
 
-	free(pair);
-	vector_destroy(numbers);
+//	vector_destroy(numbers);
 }
 
 
