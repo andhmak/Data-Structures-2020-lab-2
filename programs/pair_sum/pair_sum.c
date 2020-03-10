@@ -6,6 +6,7 @@
 Pair pair_sum(int target, Vector numbers) {
 	VectorNode node1, node2;
 	Pair sol;
+	sol = malloc(sizeof());
 	for (node1 = vector_first(numbers) ; node1 != vector_last(numbers) ; node1 = vector_next(numbers, node1)) {
 		for (node2 = vector_next(numbers, node1) ; node2 != VECTOR_EOF ; node2 = vector_next(numbers, node2)) {
 			if (target == (*(int*)vector_node_value(numbers, node1) + *(int*)vector_node_value(numbers, node2))) {
