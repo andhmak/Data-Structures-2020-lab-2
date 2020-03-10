@@ -8,19 +8,19 @@ int compare_ints(Pointer a, Pointer b) {
 }
 
 Pair pair_sum(int target, Vector numbers) {
-	VectorNode node;
+    VectorNode node;
     Map map = map_create(compare_ints, free, free);
-	Pair sol;
-	sol = malloc(sizeof(struct pair));
-	for (node = vector_first(numbers) ; node != VECTOR_EOF ; node = vector_next(numbers, node)) {
-		map_insert(map, vector_node_value(numbers, node), vector_node_value(numbers, node));
-	}
+    Pair sol;
+    sol = malloc(sizeof(struct pair));
+    for (node = vector_first(numbers) ; node != VECTOR_EOF ; node = vector_next(numbers, node)) {
+        map_insert(map, vector_node_value(numbers, node), vector_node_value(numbers, node));
+    }
     for (node = vector_first(numbers) ; node != VECTOR_EOF ; node = vector_next(numbers, node)) {
         sol->first = *(int*)vector_node_value(numbers, node);
         sol->second = target - sol->first;
-		if (map_find(map, &sol->second) != NULL) {
+        if (map_find(map, &sol->second) != NULL) {
             return sol;
         }
-	}
-	return NULL;
+    }
+    return NULL;
 }
