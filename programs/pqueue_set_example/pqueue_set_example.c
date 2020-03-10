@@ -34,7 +34,6 @@ int main(void) {
     }
     for (SetNode node = set_first(set); node != SET_EOF ; node = set_next(set, node)) {
         printf("%d\n", *(int*)set_node_value(set, node));
-        set_remove(set, set_node_value(set, node));
     }
     return 0;
 }
